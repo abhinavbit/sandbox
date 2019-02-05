@@ -1,0 +1,14 @@
+---
+
+- name: Download DB Repo
+  get_url:
+    url: "{{ db_repo_url }}"
+    dest: "{{ db_repo_dest }}"
+
+- name: Install DB Repo
+  apt:
+    deb: "{{ db_repo_dest }}"
+
+- name: update apt chache
+  apt:
+    update_cache: yes

@@ -1,0 +1,7 @@
+---
+
+     - name: Install Percona XtraBackup
+       apt:
+         name: percona-xtrabackup
+         state: present
+         force: yes

@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: True
+
+  tasks:
+     - include: tasks/include_vars.yml
+     - include: tasks/download_install_db_repo.yml
+     - include: tasks/install_server.yml
+     - include: tasks/start_mysql.yml
+     - include: tasks/install_percona_toolkit.yml
+     - include: tasks/install_percona_xtrabackup.yml

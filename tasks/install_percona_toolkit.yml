@@ -1,0 +1,7 @@
+---
+
+     - name: Install Percona Toolkit
+       apt:
+         name: percona-toolkit
+         state: present
+         force: yes

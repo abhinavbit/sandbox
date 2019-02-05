@@ -1,0 +1,14 @@
+---
+
+- name: Install DB Server
+  apt:
+    name: "{{ item }}"
+    state: present
+    force: yes
+  vars:
+    item:
+       - "{{ db_server_common }}"
+       - "{{ db_server_client }}"
+       - "{{ db_server_server }}"
+    environment:
+       DEBIAN_FRONTEND: noninteractive

@@ -1,0 +1,5 @@
+db_repo_url: https://repo.percona.com/apt/percona-release_latest.xenial_all.deb
+db_repo_dest: /tmp/percona-release_latest.xenial_all.deb
+db_server_common: percona-server-common-5.7
+db_server_client: percona-server-client-5.7
+db_server_server: percona-server-server-5.7

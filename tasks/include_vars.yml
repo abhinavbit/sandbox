@@ -1,0 +1,5 @@
+---
+
+- name: Include vars
+  include_vars:
+    file: 'main.yml'
