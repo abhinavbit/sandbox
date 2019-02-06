@@ -4,7 +4,7 @@ Vagrant.configure(2) do |config|
   config.vm.box_check_update = false
   $enable_serial_logging = false
 
-  config.vm.define "app" do |h|
+  config.vm.define "standalone" do |h|
 h.vm.network "private_network", ip: "192.168.135.102"
     h.vm.hostname = "standalone"
 
